@@ -35,10 +35,6 @@ module.exports = {
         use: ["babel-loader"],
         exclude: /node_modules/,
       },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: "asset/resource",
-      },
     ],
   },
   plugins: [
@@ -46,10 +42,9 @@ module.exports = {
       template: path.resolve(__dirname, "public", "index.html"),
     }),
     new ModuleFederationPlugin({
-      name: "FIRST_APP",
-      filename: "remoteEntry.js",
-      exposes: {
-        "./app": "./src/components/App",
+      name: "MICRO",
+      remotes: {
+        TIME_APP: "TIME_APP@http://localhost:9001/remoteEntry.js",
       },
     }),
   ],

@@ -1,11 +1,11 @@
 {
-  "name": "22-micro-fronten",
+  "name": "microapp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "start": "webpack serve --watch-files ./src"
+    "start": "webpack serve --watch-files ./src --port 9000"
   },
   "keywords": [],
   "author": "",
