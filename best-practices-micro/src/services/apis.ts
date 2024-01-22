@@ -3,13 +3,13 @@
 import { createApiClient } from 'src/helpers/service'
 import { TypeApiMethod } from 'src/interfaces'
 
-const { VITE_API_BASE_URL } = import.meta.env
+const { REACT_APP_API_BASE_URL } = process.env
 
-if (!VITE_API_BASE_URL) {
+if (!REACT_APP_API_BASE_URL) {
   throw new Error('Please copy .env.example to .env.local')
 }
 
-const VITE_AUTH_API_CLIENT = createApiClient(VITE_API_BASE_URL)
+const VITE_AUTH_API_CLIENT = createApiClient(REACT_APP_API_BASE_URL)
 
 export const postLogin: TypeApiMethod = data =>
   VITE_AUTH_API_CLIENT.post({
@@ -17,11 +17,11 @@ export const postLogin: TypeApiMethod = data =>
     data,
   })
 
-const VITE_FOOD_API_CLIENT = createApiClient(`${VITE_API_BASE_URL}/api/food`, true)
-const VITE_USER_API_CLIENT = createApiClient(`${VITE_API_BASE_URL}/api/user`, true)
-const VITE_CATEGORY_API_CLIENT = createApiClient(`${VITE_API_BASE_URL}/api/category`, true)
-const VITE_TAG_API_CLIENT = createApiClient(`${VITE_API_BASE_URL}/api/tag`, true)
-const VITE_MENU_API_CLIENT = createApiClient(`${VITE_API_BASE_URL}/general-api/menu`, true)
+const VITE_FOOD_API_CLIENT = createApiClient(`${REACT_APP_API_BASE_URL}/api/food`, true)
+const VITE_USER_API_CLIENT = createApiClient(`${REACT_APP_API_BASE_URL}/api/user`, true)
+const VITE_CATEGORY_API_CLIENT = createApiClient(`${REACT_APP_API_BASE_URL}/api/category`, true)
+const VITE_TAG_API_CLIENT = createApiClient(`${REACT_APP_API_BASE_URL}/api/tag`, true)
+const VITE_MENU_API_CLIENT = createApiClient(`${REACT_APP_API_BASE_URL}/general-api/menu`, true)
 
 // FOOD
 export const getFoods: TypeApiMethod = data =>

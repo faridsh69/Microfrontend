@@ -53,4 +53,4 @@ const ROUTES: RoutesType = [
   },
 ]
 
-export const Router = createBrowserRouter(ROUTES)
+export const router = createBrowserRouter(ROUTES)

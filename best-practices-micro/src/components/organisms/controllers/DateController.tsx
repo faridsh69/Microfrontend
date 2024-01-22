@@ -20,7 +20,7 @@ export const DateController = (props: { control: any; name: string; label: strin
     [],
   )
 
-  const changeToServerDateFormat = useCallback((date: object, onChange: (date: string) => {}) => {
+  const changeToServerDateFormat = useCallback((date, onChange) => {
     onChange(date?.format(SERVER_DATE_FORMAT) || null)
   }, [])
 

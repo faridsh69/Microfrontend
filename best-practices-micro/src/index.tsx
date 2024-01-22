@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-
-import { App } from 'src/App'
+import TimetrackingApp from './TimetrackingApp'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
+    <div>
+      <TimetrackingApp />
+    </div>
   </React.StrictMode>,
 )
