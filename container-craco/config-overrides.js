@@ -7,21 +7,6 @@ module.exports = function override(config, env) {
     remotes: {
       timetracking: "timetracking@http://localhost:4008/remoteEntry.js",
     },
-
-    // shared: {
-    //   ...deps,
-    //   react: {
-    //     singleton: true,
-    //     import: "react",
-    //     shareScope: "default",
-    //     requiredVersion: deps["react"],
-    //   },
-    //   "react-dom": {
-    //     singleton: true,
-    //     requiredVersion: deps["react-dom"],
-    //   },
-    // },
-
     // shared: {
     //   ...deps,
     //   react: {

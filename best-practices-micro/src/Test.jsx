@@ -9,9 +9,6 @@ export const Test = () => {
   const handleClick = () => {
     setCount(prev => prev + 1)
   }
-  // useEffect(() => {
-  //   console.log('w')
-  // }, [])
 
   return <div onClick={handleClick}>Test {count}</div>
 }

@@ -13,7 +13,6 @@ export const META_TAGS = {
   title: 'React Best Practices',
   description: 'React Best Practices boilerplate',
   keywords: 'react, boilerplate',
-  image: 'vite.svg',
   author: 'Farid Shahidi',
   domain: 'www.test.com',
 }
