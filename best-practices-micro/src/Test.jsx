@@ -10,5 +10,5 @@ export const Test = () => {
     setCount(prev => prev + 1)
   }
 
-  return <div onClick={handleClick}>Test {count}</div>
+  return <div onClick={handleClick}>5 Test {count}</div>
 }

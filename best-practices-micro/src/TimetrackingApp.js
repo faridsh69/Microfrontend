@@ -1,14 +1,12 @@
-// import React from 'react'
+import React from 'react'
 
-// import Timewaist from './Timewaist'
+import { Test } from './Test'
 
-// export default function TimetrackingApp() {
-//   return (
-//     <div>
-//       BOOTSTRAP
-//       <Timewaist />
-//     </div>
-//   )
-// }
-
-// import('./Test')
+export default function TimetrackingApp() {
+  return (
+    <div>
+      4 TimetrackingApp
+      <Test />
+    </div>
+  )
+}

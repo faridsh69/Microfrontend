@@ -1,11 +1,9 @@
 import TimetrackingApp from "timetracking/TimetrackingApp";
 
 const Timer = () => {
-  console.log("1 TimetrackingApp", TimetrackingApp);
-
   return (
     <div>
-      container Timer
+      3 container Timer
       <TimetrackingApp />
     </div>
   );

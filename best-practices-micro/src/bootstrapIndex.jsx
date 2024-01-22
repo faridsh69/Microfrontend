@@ -5,7 +5,7 @@ import { Test } from './Test'
 
 ReactDOM.createRoot(document.getElementById('micro-root')).render(
   <React.StrictMode>
-    BOOTSTRAP
+    1 Micro Index
     <Test />
   </React.StrictMode>,
 )
