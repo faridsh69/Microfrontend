@@ -11,22 +11,26 @@ import {
   ListItemIcon,
   ListItemText,
 } from '@mui/material'
-import { useNavigate } from 'react-router-dom'
 
 import { ADMIN_SIDEBAR_ITEMS } from 'src/configs/constants'
 import { toFormalCase } from 'src/helpers/common'
 import { useCrud } from 'src/hooks/useCrud'
+import { useHistory } from 'react-router-dom'
 
 const AdminSidebar = props => {
   const { drawerWidth } = props
 
   const [mobileOpen, setMobileOpen] = useState(false)
-  const navigate = useNavigate()
+  const history = useHistory()
+  const navigate = url => {
+    history.push(url)
+  }
+
   useCrud('category')
   useCrud('tag')
 
   const handleNavigate = route => {
-    navigate(route)
+    navigate('/timer/users')
   }
 
   const handleDrawerToggle = () => {

@@ -17,99 +17,27 @@ export const postLogin: TypeApiMethod = data =>
     data,
   })
 
-const VITE_FOOD_API_CLIENT = createApiClient(`${REACT_APP_API_BASE_URL}/api/food`, true)
-const VITE_USER_API_CLIENT = createApiClient(`${REACT_APP_API_BASE_URL}/api/user`, true)
-const VITE_CATEGORY_API_CLIENT = createApiClient(`${REACT_APP_API_BASE_URL}/api/category`, true)
-const VITE_TAG_API_CLIENT = createApiClient(`${REACT_APP_API_BASE_URL}/api/tag`, true)
-const VITE_MENU_API_CLIENT = createApiClient(`${REACT_APP_API_BASE_URL}/general-api/menu`, true)
+const TEST_API_CLIENT = createApiClient(`https://reqres.in/api/users`, true)
 
-// FOOD
-export const getFoods: TypeApiMethod = data =>
-  VITE_FOOD_API_CLIENT.get({
-    endpoint: '',
-    data,
-  })
-
-export const createFood: TypeApiMethod = data =>
-  VITE_FOOD_API_CLIENT.post({
-    endpoint: '',
-    data,
-  })
-
-export const updateFood: TypeApiMethod = data =>
-  VITE_FOOD_API_CLIENT.put({
-    endpoint: `id/${data.id}`,
-    data,
-  })
-
-export const deleteFood: TypeApiMethod = data =>
-  VITE_FOOD_API_CLIENT.remove({
-    endpoint: `id/${data}`,
-  })
-
-// USER
 export const getUsers: TypeApiMethod = data =>
-  VITE_USER_API_CLIENT.get({
+  TEST_API_CLIENT.get({
+    endpoint: '',
+    data,
+  })
+
+export const createUser: TypeApiMethod = data =>
+  TEST_API_CLIENT.post({
     endpoint: '',
     data,
   })
 
 export const updateUser: TypeApiMethod = data =>
-  VITE_USER_API_CLIENT.put({
+  TEST_API_CLIENT.put({
     endpoint: `id/${data.id}`,
     data,
   })
 
-// CATEGORY
-export const getCategories: TypeApiMethod = data =>
-  VITE_CATEGORY_API_CLIENT.get({
-    endpoint: '',
-    data,
-  })
-
-export const createCategory: TypeApiMethod = data =>
-  VITE_CATEGORY_API_CLIENT.post({
-    endpoint: '',
-    data,
-  })
-
-export const updateCategory: TypeApiMethod = data =>
-  VITE_CATEGORY_API_CLIENT.put({
-    endpoint: `id/${data.id}`,
-    data,
-  })
-
-export const deleteCategory: TypeApiMethod = data =>
-  VITE_CATEGORY_API_CLIENT.remove({
+export const deleteUser: TypeApiMethod = data =>
+  TEST_API_CLIENT.remove({
     endpoint: `id/${data}`,
-  })
-
-// TAG
-export const getTags: TypeApiMethod = data =>
-  VITE_TAG_API_CLIENT.get({
-    endpoint: '',
-    data,
-  })
-
-export const createTag: TypeApiMethod = data =>
-  VITE_TAG_API_CLIENT.post({
-    endpoint: '',
-    data,
-  })
-
-export const updateTag: TypeApiMethod = data =>
-  VITE_TAG_API_CLIENT.put({
-    endpoint: `id/${data.id}`,
-    data,
-  })
-
-export const deleteTag: TypeApiMethod = data =>
-  VITE_TAG_API_CLIENT.remove({
-    endpoint: `id/${data}`,
-  })
-
-// MENU
-export const getMenuData: TypeApiMethod = () =>
-  VITE_MENU_API_CLIENT.get({
-    endpoint: 'data',
   })

@@ -84,11 +84,11 @@ export const Navbar = () => {
         onClose={handleMenuClose}
         sx={{ zIndex: 1201 }}
       >
-        <MenuItem onClick={() => navigate('/admin')} sx={{ gap: 2 }}>
+        <MenuItem onClick={() => navigate('/timer')} sx={{ gap: 2 }}>
           <AdminPanelSettingsIcon />
           Admin
         </MenuItem>
-        <MenuItem onClick={() => navigate('/admin/profile')} sx={{ gap: 2 }}>
+        <MenuItem onClick={() => navigate('/timer/profile')} sx={{ gap: 2 }}>
           <ManageAccountsIcon />
           My Profile
         </MenuItem>
