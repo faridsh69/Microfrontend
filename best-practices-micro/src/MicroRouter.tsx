@@ -5,10 +5,10 @@ import { Suspender } from './components/organisms/Suspender'
 import { QueryClientProvider } from 'react-query'
 import { REACT_QUERY_CLIENT } from './configs/service'
 
-export const MicroRouter = () => {
+export const MicroRouter = ({ history }: any) => {
   return (
     <QueryClientProvider client={REACT_QUERY_CLIENT}>
-      <Router>
+      <Router history={history}>
         <Switch>
           <Route path='/timer' exact>
             <Menu />

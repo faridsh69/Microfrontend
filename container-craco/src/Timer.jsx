@@ -1,21 +1,24 @@
+import { useHistory } from "react-router-dom";
 import TimetrackingApp from "timetracking/TimetrackingApp";
 
 const Timer = () => {
+  const history = useHistory();
+
   return (
     <div>
       4 Container Timer
       <TimetrackingApp
-        appProps={
-          {
-            // initialPath: location.pathname,
-            // onNavigate: ({ pathname: nextPathname }) => {
-            //   const { pathname } = location;
-            //   if (pathname !== nextPathname) {
-            //     navigate(nextPathname);
-            //   }
-            // },
-          }
-        }
+        appProps={{
+          // user,
+          initialPath: history.location.pathname,
+          onNavigate: ({ pathname: nextPathname }) => {
+            const { pathname } = history.location;
+
+            if (pathname !== nextPathname) {
+              history.push(nextPathname);
+            }
+          },
+        }}
       />
     </div>
   );
