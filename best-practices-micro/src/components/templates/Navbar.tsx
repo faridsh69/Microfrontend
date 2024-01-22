@@ -53,7 +53,7 @@ export const Navbar = () => {
         <LanguageSwitcher />
         <ThemeSwitcher />
         {!accessToken && (
-          <Button color='inherit' component={Link} to='/login'>
+          <Button color='inherit' component={Link} to='login'>
             Login
           </Button>
         )}
