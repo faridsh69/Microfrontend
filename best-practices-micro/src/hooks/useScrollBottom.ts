@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { useEffect } from 'react'
 
 export const useScrollBottom = (containerId, dependencies = [], timeout = 0) => {

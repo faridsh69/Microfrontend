@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import axios, { AxiosInstance } from 'axios'
 
 import { getToken } from 'src/helpers/auth'

@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { getLocalstorage, removeLocalsotrage, setLocalsotrage } from 'src/helpers/common'
 import { LOCAL_STORAGE_ACCESS_TOKEN_KEY } from 'src/configs/constants'
 

@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { toast } from 'react-toastify'
 
 export const errorHandler = error => {

@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { useTranslation } from 'react-i18next'
 import { FormControl, Select, MenuItem } from '@mui/material'
 

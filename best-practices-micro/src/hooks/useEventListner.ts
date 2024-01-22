@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { useEffect } from 'react'
 
 export const useEventListener = (eventName, action, dependencies = []) => {

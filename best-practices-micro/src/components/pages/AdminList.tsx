@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { useCallback } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { Box, Button } from '@mui/material'

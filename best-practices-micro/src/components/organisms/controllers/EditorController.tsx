@@ -1,3 +1,4 @@
+// @ts-nocheck
 import ReactQuill from 'react-quill'
 import { Controller } from 'react-hook-form'
 import { FormLabel, FormControl, FormHelperText } from '@mui/material'

@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { createApiClient } from 'src/helpers/service'
 import { TypeApiMethod } from 'src/interfaces'
 

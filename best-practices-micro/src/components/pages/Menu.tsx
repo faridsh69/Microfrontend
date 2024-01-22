@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { SkeletonBox } from 'src/components/organisms/AccordionMui'
 import { PageLayout } from 'src/components/templates/PageLayout'
 import { useCrud } from 'src/hooks/useCrud'

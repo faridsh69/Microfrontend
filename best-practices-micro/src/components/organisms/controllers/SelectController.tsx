@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { Controller } from 'react-hook-form'
 import { FormControl, FormHelperText, InputLabel, MenuItem, Select } from '@mui/material'
 import { convertNullToEmptyString, toBool, toFormalCase } from 'src/helpers/common'

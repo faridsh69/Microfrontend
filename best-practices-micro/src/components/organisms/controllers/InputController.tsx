@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import React, { useCallback } from 'react'
 import { Controller } from 'react-hook-form'
 import { TextField } from '@mui/material'

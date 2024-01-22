@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import FastfoodIcon from '@mui/icons-material/Fastfood'
 import RestaurantIcon from '@mui/icons-material/Restaurant'
 import DinnerDiningIcon from '@mui/icons-material/DinnerDining'

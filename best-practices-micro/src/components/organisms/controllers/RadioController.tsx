@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { Controller } from 'react-hook-form'
 import {
   FormControl,

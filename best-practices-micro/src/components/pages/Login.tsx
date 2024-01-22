@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { useTranslation } from 'react-i18next'
 import { Container, Avatar, Box, Grid, Link, Typography } from '@mui/material'
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined'

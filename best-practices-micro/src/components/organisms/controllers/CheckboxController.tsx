@@ -3,7 +3,7 @@ import { Checkbox, FormControl, FormControlLabel, FormHelperText } from '@mui/ma
 
 import { toFormalCase, toBool } from 'src/helpers/common'
 
-export const CheckBoxController = props => {
+export const CheckBoxController = (props: { control: any; name: string; label: string }) => {
   const { control, name, label } = props
 
   const inputLabel = label || toFormalCase(name)

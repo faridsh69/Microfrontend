@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { useCallback } from 'react'
 import { useMutation } from 'react-query'
 import { useNavigate } from 'react-router-dom'

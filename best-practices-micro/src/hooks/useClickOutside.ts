@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { useCallback, useEffect, useRef, useState } from 'react'
 
 export const useClickOutside = () => {

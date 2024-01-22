@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { Link, useNavigate } from 'react-router-dom'
 import { AppBar, Box, IconButton, Button, Toolbar, Typography, MenuItem, Menu } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'

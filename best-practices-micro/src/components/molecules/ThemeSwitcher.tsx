@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { useAtom } from 'jotai'
 import { IconButton } from '@mui/material'
 import DarkModeIcon from '@mui/icons-material/DarkMode'

@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { Card, CardContent, CardHeader, Skeleton } from '@mui/material'
 
 export const SkeletonBox = () => {

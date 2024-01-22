@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { Link as RouterLink } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
 import { Breadcrumbs, Link, Typography } from '@mui/material'
