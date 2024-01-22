@@ -1,6 +1,12 @@
-import TimeApp from "timetracking/TimetrackingApp";
+import TimetrackingApp from "timetracking/TimetrackingApp";
 
-export const Timer = () => {
-  console.log("1 timer");
-  return <TimeApp />;
+const Timer = () => {
+  return (
+    <div>
+      container Timer
+      <TimetrackingApp />
+    </div>
+  );
 };
+
+export default Timer;

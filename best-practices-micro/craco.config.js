@@ -6,7 +6,8 @@ const mfConfig = {
   name: "timetracking",
   filename: "remoteEntry.js",
   exposes: {
-    "./TimetrackingApp": "./src/bootstrap",
+    "./TimetrackingApp": "./src/BestApp",
+    // "./TimetrackingApp": "./src/bootstrap",
   },
   shared: {
     ...deps,

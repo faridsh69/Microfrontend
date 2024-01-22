@@ -1,6 +1,6 @@
 // import react from "react";
 import { createRoot } from "react-dom/client";
-import { BestApp } from "./BestApp";
+import BestApp from "./BestApp";
 
 // interface ParentProps extends Object {}
 
