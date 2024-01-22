@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from "react";
 
 const TimeApp = lazy(() => import("TIME_APP/microApp"));
+const BestApp = lazy(() => import("BEST_APP/BestApp"));
 
 export const ContainerApp = () => {
   const [name, setName] = React.useState(null);
@@ -12,6 +13,9 @@ export const ContainerApp = () => {
       <div className="Microfrontend-Apps">
         <Suspense fallback={<span>Loading...</span>}>
           <TimeApp onChange={(e) => setName(e.target.value)} />
+        </Suspense>
+        <Suspense fallback={<span>Loading...</span>}>
+          <BestApp />
         </Suspense>
       </div>
     </div>

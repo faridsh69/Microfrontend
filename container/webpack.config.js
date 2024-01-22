@@ -42,9 +42,9 @@ module.exports = {
       template: path.resolve(__dirname, "public", "index.html"),
     }),
     new ModuleFederationPlugin({
-      name: "MICRO",
       remotes: {
         TIME_APP: "TIME_APP@http://localhost:9001/remoteEntry.js",
+        BEST_APP: "BEST_APP@http://localhost:3000/remoteEntry.js",
       },
     }),
   ],
