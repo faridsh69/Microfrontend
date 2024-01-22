@@ -1,47 +1,41 @@
-const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
-const deps = require("./package.json").dependencies;
+const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin')
+const deps = require('./package.json').dependencies
 
 // const moduleFederation = new ModuleFederationPlugin({
 const mfConfig = {
-  name: "timetracking",
-  filename: "remoteEntry.js",
+  name: 'timetracking',
+  filename: 'remoteEntry.js',
   exposes: {
-    "./TimetrackingApp": "./src/BestApp",
-    // "./TimetrackingApp": "./src/bootstrap",
+    './TimetrackingApp': './src/TimetrackingApp',
   },
   shared: {
     ...deps,
     react: {
       singleton: true,
-      requiredVersion: deps["react"],
+      requiredVersion: deps['react'],
     },
-    "react-dom/client": {
+    'react-dom/client': {
       singleton: true,
-      import: "react-dom/client",
+      import: 'react-dom/client',
     },
-    "react-dom": {
+    'react-dom': {
       singleton: true,
-      requiredVersion: deps["react-dom"],
+      requiredVersion: deps['react-dom'],
     },
   },
-};
+}
 
 module.exports = {
   plugins: [
     {
       plugin: {
         overrideWebpackConfig: ({ webpackConfig }) => {
-          // this public path should be modified for production depending on deployment configuration
-          webpackConfig.output.publicPath = "auto";
+          webpackConfig.output.publicPath = 'auto'
 
-          // Module Federation configuration is passed here
-          webpackConfig.plugins = [
-            ...webpackConfig.plugins,
-            new ModuleFederationPlugin(mfConfig),
-          ];
-          return webpackConfig;
+          webpackConfig.plugins = [...webpackConfig.plugins, new ModuleFederationPlugin(mfConfig)]
+          return webpackConfig
         },
       },
     },
   ],
-};
+}
