@@ -1,6 +1,6 @@
 // @ts-nocheck
 
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { AppBar, Box, IconButton, Button, Toolbar, Typography, MenuItem, Menu } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 import AccountCircle from '@mui/icons-material/AccountCircle'
@@ -14,7 +14,12 @@ import ManageAccountsIcon from '@mui/icons-material/ManageAccounts'
 import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings'
 
 export const Navbar = () => {
-  const navigate = useNavigate()
+  const history = useHistory()
+
+  const navigate = url => {
+    history.push(url)
+  }
+
   const { handleLogout } = useAuth()
 
   const accessToken = getToken()
@@ -46,6 +51,7 @@ export const Navbar = () => {
           noWrap
           component='div'
           sx={{ display: { xs: 'none', sm: 'block' } }}
+          onClick={() => navigate('/timer')}
         >
           Restaurant Digital Menu
         </Typography>
@@ -53,7 +59,7 @@ export const Navbar = () => {
         <LanguageSwitcher />
         <ThemeSwitcher />
         {!accessToken && (
-          <Button color='inherit' component={Link} to='login'>
+          <Button color='inherit' component={Link} to='/timer/login'>
             Login
           </Button>
         )}

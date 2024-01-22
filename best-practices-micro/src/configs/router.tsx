@@ -1,5 +1,3 @@
-import { createBrowserRouter } from 'react-router-dom'
-
 import { Menu } from 'src/components/pages/Menu'
 import { Suspender } from 'src/components/organisms/Suspender'
 import { ErrorPage } from 'src/components/molecules/ErrorPage'
@@ -53,4 +51,4 @@ const ROUTES: RoutesType = [
   },
 ]
 
-export const router = createBrowserRouter(ROUTES)
+export const router = ROUTES

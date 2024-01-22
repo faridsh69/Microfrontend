@@ -6,7 +6,12 @@ export const Menu = () => {
   return (
     <PageLayout>
       <br />
-      <div className='categories'></div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      MENU
     </PageLayout>
   )
 }

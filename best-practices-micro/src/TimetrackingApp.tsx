@@ -1,12 +1,11 @@
-import { App } from 'src/App'
+import { MicroRouter } from './MicroRouter'
 
 export default function TimetrackingApp({ appProps }: any) {
+  console.log('1 appProps', appProps)
   return (
     <div>
-      4 micro frontend TimetrackingApp
-      {/* <MemoryRouter> */}
-      <App appProps={appProps} />
-      {/* </MemoryRouter> */}
+      5.1 micro frontend TimetrackingApp
+      <MicroRouter />
     </div>
   )
 }

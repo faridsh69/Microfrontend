@@ -5,7 +5,7 @@ const LazyTimer = lazy(() => import(`./Timer.jsx`));
 export const Suspender = () => {
   return (
     <div>
-      2 container Suspender
+      3 Container Suspender
       <Suspense fallback={<div>LOADING</div>}>{<LazyTimer />}</Suspense>
     </div>
   );

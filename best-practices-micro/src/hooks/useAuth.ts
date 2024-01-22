@@ -2,7 +2,7 @@
 
 import { useCallback } from 'react'
 import { useMutation } from 'react-query'
-import { useNavigate } from 'react-router-dom'
+import { useHistory, useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import { LOCAL_STORAGE_AUTH_USER_EMAIL } from 'src/configs/constants'
 
@@ -11,7 +11,10 @@ import { setLocalsotrage } from 'src/helpers/common'
 import { postLogin } from 'src/services/apis'
 
 export const useAuth = () => {
-  const navigate = useNavigate()
+  const history = useHistory()
+  const navigate = url => {
+    history.push(url)
+  }
 
   const loginMutation = useMutation(postLogin, {
     onSuccess: (response, payload) => {
@@ -25,7 +28,7 @@ export const useAuth = () => {
   const handleLogout = useCallback(() => {
     removeToken()
     navigate('/login')
-  }, [navigate])
+  }, [])
 
   return {
     loginMutation,
