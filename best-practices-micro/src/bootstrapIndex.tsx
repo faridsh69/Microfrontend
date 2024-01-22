@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-import { Test } from './Test'
+import { App } from 'src/App'
 
-ReactDOM.createRoot(document.getElementById('micro-root')).render(
+ReactDOM.createRoot(document.getElementById('micro-root')!).render(
   <React.StrictMode>
     1 Micro Index
-    <Test />
+    <App />
   </React.StrictMode>,
 )

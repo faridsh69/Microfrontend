@@ -1,12 +1,10 @@
-import React from 'react'
-
-import { Test } from './Test'
+import { App } from 'src/App'
 
 export default function TimetrackingApp() {
   return (
     <div>
       4 TimetrackingApp
-      <Test />
+      <App />
     </div>
   )
 }
