@@ -46,10 +46,25 @@ module.exports = {
       template: path.resolve(__dirname, "public", "index.html"),
     }),
     new ModuleFederationPlugin({
-      name: "TIME_APP",
+      name: "timetracking",
       filename: "remoteEntry.js",
       exposes: {
-        "./microApp": "./src/TimeApp",
+        "./TimetrackingApp": "./src/bootstrap",
+      },
+      shared: {
+        ...deps,
+        react: {
+          singleton: true,
+          requiredVersion: deps["react"],
+        },
+        "react-dom/client": {
+          singleton: true,
+          import: "react-dom/client",
+        },
+        "react-dom": {
+          singleton: true,
+          requiredVersion: deps["react-dom"],
+        },
       },
     }),
   ],
