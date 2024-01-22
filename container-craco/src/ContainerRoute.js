@@ -14,6 +14,11 @@ export const ContainerRoute = () => {
             </div>
           </Route>
           <Route path="/timer">
+            <LinkButton />
+            <Suspender />
+          </Route>
+          <Route path="/timer/*">
+            <LinkButton />
             <Suspender />
           </Route>
         </Switch>

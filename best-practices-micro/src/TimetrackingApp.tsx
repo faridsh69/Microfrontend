@@ -14,11 +14,10 @@ export default function TimetrackingApp({ appProps }: any) {
     history.listen(onNavigate)
   }
 
-  console.log('1 appProps', appProps)
   return (
     <div>
       5.1 micro frontend TimetrackingApp
-      <MicroRouter />
+      <MicroRouter history={history} />
     </div>
   )
 }
