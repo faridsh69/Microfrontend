@@ -17,10 +17,9 @@ const AdminList = () => {
     history.push(url)
   }
 
-  const { model = 'users' } = useParams()
+  const { model } = useParams()
 
   const { list, deleteMutation } = useCrud(model)
-  console.log('1 list', list)
 
   const handleDelete = useCallback(
     id => {

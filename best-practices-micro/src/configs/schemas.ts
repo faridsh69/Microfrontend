@@ -9,6 +9,10 @@ export const LOGIN_SCHEMA = yup.object({
   password: yup.string().min(6).required(),
 })
 
+export const USERS_SCHEMA = yup.object({
+  email: yup.string().email().required(),
+})
+
 export const FOOD_SCHEMA = yup.object({
   title: yup.string().required(),
   description: yup.string().nullable(),

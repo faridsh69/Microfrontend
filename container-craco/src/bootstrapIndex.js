@@ -5,7 +5,7 @@ import { ContainerRoute } from "./ContainerRoute";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    1 Container bootstrapIndex
+    {/* 1 Container bootstrapIndex */}
     <ContainerRoute />
   </React.StrictMode>
 );

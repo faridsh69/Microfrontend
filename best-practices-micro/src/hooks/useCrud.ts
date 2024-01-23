@@ -29,12 +29,14 @@ export const useCrud: TypeUseCrud = MODEL_SLUG => {
 
   const createMutation = useMutation(createApi, {
     onSuccess: response => {
+      const createdModel = response.data ? response.data : response
+
       queryClient.setQueryData(MODEL_SLUG, list => {
         if (list) {
-          return [...list, response.data]
+          return [...list, createdModel]
         }
 
-        return [response.data]
+        return [createdModel]
       })
       toast.success(t(MODEL_SLUG + ' created successfully'))
     },
@@ -66,7 +68,7 @@ export const useCrud: TypeUseCrud = MODEL_SLUG => {
       return oldItem
     },
     onSuccess: response => {
-      const updatedData = response.data
+      const updatedData = response.data ? response.data : response
       queryClient.setQueryData(MODEL_SLUG, list =>
         list.map(item => (item.id === updatedData.id ? updatedData : item)),
       )

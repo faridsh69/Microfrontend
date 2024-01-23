@@ -20,16 +20,6 @@ export const FormMui = props => {
   const onGeneralSubmit = useCallback(
     // @ts-ignore
     data => {
-      delete data.avatar
-      delete data.name
-      delete data.images
-      delete data.videos
-      delete data.audios
-      delete data.documents
-      delete data.likes
-      delete data.category
-      delete data['main-image']
-
       console.log('1 data', data)
 
       onSubmit(data)

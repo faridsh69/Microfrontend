@@ -13,19 +13,19 @@ const AdminLayout = () => {
 
   return (
     <PageLayout>
-      <Box sx={{ display: 'flex' }}>
+      <Box sx={{ display: 'flex', mt: 5 }}>
         <MemoAdminSidebar drawerWidth={drawerWidth} />
         <Box
           component='main'
           sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
         >
-          <Route path='/timer/users' exact>
+          <Route path='/timer/:model' exact>
             <AdminList />
           </Route>
-          <Route path='/timer/users/create'>
+          <Route path='/timer/:model/create'>
             <AdminForm />
           </Route>
-          <Route path='/timer/users/:id/edit'>
+          <Route path='/timer/:model/:id/edit'>
             <AdminForm />
           </Route>
         </Box>

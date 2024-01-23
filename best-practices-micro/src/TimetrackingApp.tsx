@@ -16,7 +16,7 @@ export default function TimetrackingApp({ appProps }: any) {
 
   return (
     <div>
-      5.1 micro frontend TimetrackingApp
+      {/* 5.1 micro frontend TimetrackingApp */}
       <MicroRouter history={history} />
     </div>
   )

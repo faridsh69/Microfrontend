@@ -21,7 +21,7 @@ import EditIcon from '@mui/icons-material/Edit'
 export const TableMui = props => {
   const { list, bodyCells, headCells, handleDelete, handleEdit } = props
   const [order, setOrder] = useState<OrderType>('asc')
-  const [orderBy, setOrderBy] = useState('calories')
+  const [orderBy, setOrderBy] = useState('id')
   const [page, setPage] = useState(0)
   const [rowsPerPage, setRowsPerPage] = useState(10)
   const [selected, setSelected] = useState<readonly number[]>([])

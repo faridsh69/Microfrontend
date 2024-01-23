@@ -21,7 +21,6 @@ export const SelectController = props => {
               label={label}
               onChange={data => {
                 onChange(data)
-                console.log(data)
               }}
               value={!multiple ? convertNullToEmptyString(value) : value || []}
               multiple={multiple}

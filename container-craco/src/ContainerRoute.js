@@ -5,7 +5,7 @@ import { Suspender } from "./Suspender";
 export const ContainerRoute = () => {
   return (
     <div>
-      2 Container Route
+      {/* 2 Container Route */}
       <Router>
         <Switch>
           <Route path="/" exact>
@@ -14,13 +14,11 @@ export const ContainerRoute = () => {
             </div>
           </Route>
           <Route path="/timer">
-            <LinkButton />
             <Suspender />
           </Route>
-          <Route path="/timer/*">
-            <LinkButton />
+          {/* <Route path="/timer/*">
             <Suspender />
-          </Route>
+          </Route> */}
         </Switch>
       </Router>
     </div>

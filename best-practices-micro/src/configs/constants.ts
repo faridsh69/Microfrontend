@@ -1,9 +1,6 @@
 // @ts-nocheck
 
-import FastfoodIcon from '@mui/icons-material/Fastfood'
-import RestaurantIcon from '@mui/icons-material/Restaurant'
-import DinnerDiningIcon from '@mui/icons-material/DinnerDining'
-import StorefrontIcon from '@mui/icons-material/Storefront'
+import GroupAddIcon from '@mui/icons-material/GroupAdd'
 
 export const LOCAL_STORAGE_APP_KEY = 'APPLICATION'
 export const LOCAL_STORAGE_ACCESS_TOKEN_KEY = 'access_token'
@@ -25,19 +22,7 @@ export const SERVER_DATE_FORMAT = 'YYYY-MM-DD'
 
 export const ADMIN_SIDEBAR_ITEMS = [
   {
-    title: 'food',
-    icon: FastfoodIcon,
-  },
-  {
-    title: 'category',
-    icon: RestaurantIcon,
-  },
-  {
-    title: 'order',
-    icon: DinnerDiningIcon,
-  },
-  {
-    title: 'shop',
-    icon: StorefrontIcon,
+    title: 'Users',
+    icon: GroupAddIcon,
   },
 ]

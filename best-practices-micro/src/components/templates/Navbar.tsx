@@ -35,17 +35,8 @@ export const Navbar = () => {
   }
 
   return (
-    <AppBar position='static' sx={{ zIndex: 1201 }}>
+    <AppBar position='fixed' sx={{ zIndex: 1201 }}>
       <Toolbar>
-        <IconButton
-          size='large'
-          edge='start'
-          color='inherit'
-          aria-label='open drawer'
-          sx={{ mr: 2 }}
-        >
-          <MenuIcon />
-        </IconButton>
         <Typography
           variant='h6'
           noWrap
@@ -53,7 +44,7 @@ export const Navbar = () => {
           sx={{ display: { xs: 'none', sm: 'block' } }}
           onClick={() => navigate('/timer')}
         >
-          Restaurant Digital Menu
+          Micro frontend with React Query + Router dom and MUI
         </Typography>
         <Box sx={{ flexGrow: 1 }} />
         <LanguageSwitcher />
