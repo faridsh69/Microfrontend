@@ -38,6 +38,7 @@ export const MicroRouter = (props: any) => {
         <ToastContainer pauseOnFocusLoss={false} position='bottom-right' />
         <Router history={history}>
           <Switch>
+            <Route path='/'>MICRO</Route>
             <Route path='/timer/login' exact>
               <Login />
             </Route>

@@ -9,7 +9,6 @@ const Timer = () => {
       {/* 4 Container Timer */}
       <TimetrackingApp
         appProps={{
-          // user,
           initialPath: history.location.pathname,
           onNavigate: ({ pathname: nextPathname }) => {
             const { pathname } = history.location;

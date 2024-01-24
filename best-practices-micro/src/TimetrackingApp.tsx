@@ -1,7 +1,8 @@
 import { MicroRouter } from './MicroRouter'
 import { createBrowserHistory, createMemoryHistory } from 'history'
 
-export default function TimetrackingApp({ appProps }: any) {
+export default function TimetrackingApp(props: any) {
+  const { appProps = {} } = props
   const { initialPath = '/', onNavigate } = appProps
 
   const history =

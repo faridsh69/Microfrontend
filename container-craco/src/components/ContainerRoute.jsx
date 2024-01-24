@@ -10,15 +10,13 @@ export const ContainerRoute = () => {
         <Switch>
           <Route path="/" exact>
             <div>
+              Micro - home
               <LinkButton />
             </div>
           </Route>
           <Route path="/timer">
             <Suspender />
           </Route>
-          {/* <Route path="/timer/*">
-            <Suspender />
-          </Route> */}
         </Switch>
       </Router>
     </div>

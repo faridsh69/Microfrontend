@@ -1,6 +1,6 @@
 import { Suspense, lazy } from "react";
 
-const LazyTimer = lazy(() => import(`./Timer.jsx`));
+const LazyTimer = lazy(() => import(`./Timer`));
 
 export const Suspender = () => {
   return (

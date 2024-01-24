@@ -10,12 +10,12 @@ const mfConfig = {
     ...dependencies,
     react: {
       singleton: true,
-      // eager: true,
+      eager: true,
       requiredVersion: dependencies["react"],
     },
     "react-dom": {
       singleton: true,
-      // eager: true,
+      eager: true,
       requiredVersion: dependencies["react-dom"],
     },
   },
